@@ -2,11 +2,12 @@ import React from 'react';
 
 const MissionVision: React.FC = () => {
   return (
-    <section id="nosotros" className="py-24 bg-white relative">
+    <section id="nosotros" className="py-24 bg-white relative scroll-mt-20">
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-serif text-[#0a192f] tracking-widest font-bold">JUSTICIA - EFICIENCIA - CALIDAD</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-[#0a192f] tracking-widest font-bold uppercase">JUSTICIA - EFICIENCIA - CALIDAD</h2>
           <div className="w-24 h-1 bg-amber-500 mx-auto mt-6"></div>
+          <p className="text-slate-500 mt-6 max-w-2xl mx-auto font-medium italic">Nuestros pilares fundamentales como firma jurídica</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-16">

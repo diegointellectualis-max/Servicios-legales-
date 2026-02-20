@@ -1,6 +1,8 @@
+
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import CoverageServices from './components/CoverageServices';
 import Services from './components/Services';
 import About from './components/About';
 import Stats from './components/Stats';
@@ -17,6 +19,7 @@ const App: React.FC = () => {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <CoverageServices />
         <Services />
         <About />
         <Stats />

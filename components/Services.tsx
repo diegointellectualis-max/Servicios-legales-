@@ -1,12 +1,14 @@
+
 import React from 'react';
 
 const ServiceBlock: React.FC<{ 
+  id?: string;
   icon: string; 
   title: string; 
   description: React.ReactNode;
   footer: string;
-}> = ({ icon, title, description, footer }) => (
-  <div className="flex flex-col bg-white p-10 rounded-3xl shadow-[0_15px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-2xl transition-all border border-slate-100 group">
+}> = ({ id, icon, title, description, footer }) => (
+  <div id={id} className="flex flex-col bg-white p-10 rounded-3xl shadow-[0_15px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-2xl transition-all border border-slate-100 group scroll-mt-24">
     <div className="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#0a192f] transition-colors duration-500">
       <i className={`fas ${icon} text-3xl text-amber-600 group-hover:text-amber-400 transition-colors`}></i>
     </div>
@@ -37,6 +39,7 @@ const Services: React.FC = () => {
           
           {/* Servicio 1: Insolvencia */}
           <ServiceBlock 
+            id="insolvencia"
             icon="fa-balance-scale" 
             title="Insolvencia de Persona Natural y Pequeños Comerciantes"
             footer="Le acompañamos en su proceso de recuperación financiera con estrategias reales."
@@ -52,6 +55,7 @@ const Services: React.FC = () => {
 
           {/* Servicio 2: Urbanismo */}
           <ServiceBlock 
+            id="urbanistico"
             icon="fa-drafting-compass" 
             title="Derecho Urbanístico y Gestión de Licencias"
             footer="Evite que sus proyectos de construcción se transformen en complicaciones legales."
@@ -67,6 +71,7 @@ const Services: React.FC = () => {
 
           {/* Servicio 3: Notaría */}
           <ServiceBlock 
+            id="notaria"
             icon="fa-stamp" 
             title="Asesoría y Acompañamiento en Trámites Notariales"
             footer="Seguridad jurídica y agilidad en cada firma ante escritura pública."

@@ -1,7 +1,8 @@
-
 import React from 'react';
 
 const Hero: React.FC = () => {
+  const whatsappUrl = "https://wa.me/573217830681?text=Hola,%20deseo%20agendar%20una%20cita%20con%20un%20asesor%20legal.";
+
   return (
     <section id="inicio" className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Background con Filtro Azul Oscuro */}
@@ -33,16 +34,21 @@ const Hero: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row items-center gap-6 pt-4">
             <a 
-              href="#servicios" 
-              className="w-full sm:w-auto bg-amber-600 hover:bg-amber-700 text-white px-10 py-4 rounded-full font-bold text-sm uppercase tracking-widest transition-all shadow-xl text-center"
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-full font-bold text-sm uppercase tracking-widest transition-all shadow-xl text-center flex items-center justify-center gap-2"
             >
-              Nuestros Servicios
+              <i className="fab fa-whatsapp"></i>
+              Hablar con un asesor
             </a>
             <a 
-              href="#contacto" 
-              className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white backdrop-blur-md px-10 py-4 rounded-full font-bold text-sm uppercase tracking-widest transition-all border border-white/20 text-center"
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto bg-amber-600 hover:bg-amber-700 text-white px-10 py-4 rounded-full font-bold text-sm uppercase tracking-widest transition-all shadow-xl text-center"
             >
-              Contactar Ahora
+              Solicitar asesoría personalizada
             </a>
           </div>
         </div>
