@@ -1,0 +1,7 @@
+{
+  "name": "Ingenio Servicios Legales - Corporativo",
+  "description": "Sitio web corporativo para Ingenio Servicios Legales, firma especializada en insolvencia, derecho urbanístico y trámites notariales en Colombia.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
